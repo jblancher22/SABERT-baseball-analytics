@@ -1,0 +1,9 @@
+﻿Batting Average on Balls in Play (BABIP)
+Definition
+BABIP measures a player's batting average exclusively on balls hit into the field of play, removing outcomes not affected by the opposing defense (namely home runs and strikeouts).
+For example, a hitter who goes 2-for-5 with a home run and a strikeout would have a .333 BABIP. He's 1-for-3 on the balls he put in play.
+The formula
+(H - HR)/(AB - K - HR + SF)
+Why it's useful
+BABIP can be used to provide some context when evaluating both pitchers and hitters. The league average BABIP is typically around .300. Pitchers who have allowed a high percentage of hits on balls in play will typically regress to the mean, and vice versa. In other words, over time, they'll see fewer (or more) balls in play fall for hits, and therefore experience better (or worse) results in terms of run prevention. The same applies for batters who have seen a high or low percentage of their balls in play drop in for hits.
+That said, skill can play a role in BABIP, as some pitchers are adept at generating weak contact, while some hitters excel at producing hard-hit balls. For example, Clayton Kershaw finished the 2019 season with a lifetime .270 BABIP allowed, while Mike Trout ended the campaign with a career .348 BABIP.

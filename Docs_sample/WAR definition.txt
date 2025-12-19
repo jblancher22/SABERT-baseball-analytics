@@ -1,0 +1,57 @@
+﻿What is WAR?
+Wins Above Replacement (WAR) is an attempt by the sabermetric baseball community to summarize a player’s total contributions to their team in one statistic. You should always use more than one metric at a time when evaluating players, but WAR is all-inclusive and provides a useful reference point for comparing players. WAR offers an estimate to answer the question, “If this player got injured and their team had to replace them with a freely available minor leaguer or a AAAA player from their bench, how much value would the team be losing?” This value is expressed in a wins format, so we could say that Player X is worth +6.3 wins to their team while Player Y is only worth +3.5 wins, which means it is highly likely that Player X has been more valuable than Player Y.
+WAR is not meant to be a perfectly precise indicator of a player’s contribution, but rather an estimate of their value to date. Given the imperfections of some of the available data and the assumptions made to calculate other components, WAR works best as an approximation. A 6 WAR player might be worth between 5.0 and 7.0 WAR, but it is pretty safe to say they are at least an All-Star level player and potentially an MVP.
+While WAR is not as complicated as some might think, it does require a good bit of information to calculate and understand. Below you can find general information about WAR and links to specific information about position players and pitchers, as WAR is obviously calculated differently for each.
+What is WAR? | Sabermetrics Library
+● For Position Players
+● For Pitchers Calculation:
+Calculating WAR, especially for position players, is simpler than you’d think. If you want the detailed version with the precise steps and formulas, head to our page on Position Player WAR or Pitcher WAR. The short answer, though, is as follows:
+● Position players – To calculate WAR for position players you want to take their Batting Runs, Base Running Runs, and Fielding Runs above average and then add in a positional adjustment, a small adjustment for their league, and then add in replacement runs so that we are comparing their performance to replacement level rather than the average player. After that, you simply take that sum and divide it by the runs per win value of that season to find WAR. The simple equation looks something like this:
+WAR = (Batting Runs + Base Running Runs +Fielding Runs + Positional Adjustment + League Adjustment +Replacement Runs) / (Runs Per Win)
+● Pitchers – While position player WAR is based on Batting Runs and Fielding Runs, pitching WAR uses FIP (with infield fly balls), adjusted for park, and scaled to how many innings the pitcher threw. FIP is translated into runs, converted to represent value above replacement level, and is then converted from runs to wins. This is a slightly more complicated process than for position players, so you should click over to the pitcher WAR page if you want the details.
+WAR is available in two places: FanGraphs (fWAR) and Baseball-Reference (rWAR or bWAR). Both statistics use the same framework and calculate replacement level the same, but use different methods for estimating offensive, defensive, and pitching value, so their results differ in some cases. Additionally, BaseballProspectus calculates WARP, which is the same idea by a different name. All of the information provided on these pages refers to fWAR, unless otherwise specified.
+Why WAR:
+WAR is trying to answer the time-honored question: How valuable is each player to his team? Baseball is the sum of many different parts and players can help their teams win through hitting, base running, defensive play, or pitching. Comparing two players offensively is useful, but it discounts the potential contribution a player can make by saving runs on defense. WAR is a simple attempt to combine a player’s total contribution into a single value.
+
+
+2/6
+12/1/25, 2:39 PM
+What is WAR? | Sabermetrics Library
+The goal of WAR is to provide a holistic metric of player value that allows for comparisons across team, league, year, and era and a framework for player evaluation. While there will likely be improvements to the process by which we calculate the inputs of WAR, the basic idea is something fans and analysts have desired for decades. WAR estimates a player’s total value and allows us to make comparisons among players with vastly different skill sets. Who is better, a slugging first baseman or a superlative defensive shortstop? WAR gives you a method for answering that question.
+How to Use WAR:
+Perhaps one of the most controversial aspects of sabermetrics is the way in which WAR is used. Given the nature of the calculation and potential measurement errors, WAR should be used as a guide for separating groups of players and not as a precise estimate. For example, a player that has been worth 6.4 WAR and a player that has been worth 6.1 WAR over the course of a season cannot be distinguished from one another using WAR. It is simply too close for this particular tool to tell them apart. WAR can tell you that these two players are likely about equal in value, but you need to dig deeper to separate them.
+However, a 6.4 WAR player and a 4.1 WAR player are different enough that you can have a high level of confidence that the first player has been more valuable to their team over the given season.
+For position players, the largest point of contention comes in measuring defense and estimating the positional adjustment. Our measures of both are more uncertain than our measures of offense, so players who get a good amount of their value through their defensive ratings likely have more uncertainty around their WAR value than players who have defensive value closer to average. This does not mean that WAR is wrong or biased, but rather that it is not yet capable of perfect accuracy and should be used as such.
+For pitchers, the biggest open question is how much credit a pitcher should receive for the result of a ball in play. At FanGraphs, we use FIP which assumes average results on batted balls. We know that there is some skill involved in suppressing hits on balls in play, but we have no idea exactly how much. Therefore, WAR will sell short players with certain FIP-beating skills and oversell those pitchers whose results fall short of their FIP for reasons within their control. At this point, we don’t have a good way of assigning credit more accurately for balls in play.
+However, we also house RA9-WAR, which is WAR based on runs allowed instead of FIP. This allows you to use one to inform the other however you like.
+
+
+What is WAR? | Sabermetrics Library
+Using WAR properly is difficult because it requires you to think more abstractly than some other aspects of life. The exact number is not as important as the basic range, but this isn’t just true of WAR. This is the case with all statistics in all parts of the game.
+Context:
+League-average WAR rates vary. An average full-time position player is worth about 2 WAR, while average bench players contribute much less (typically between 0 and 1 WAR). Average starting pitchers also are worth around 2 WAR, while relief pitchers are considered superb if they crack +1 WAR.
+For position players and starting pitchers, here is a good rule-of-thumb chart:
+Scrub
+	0-1 WAR
+	Role Player
+	1-2 WAR
+	Solid Starter
+	2-3 WAR
+	Good Player
+	3-4 WAR
+	All-Star
+	4-5 WAR
+	Superstar
+	5-6 WAR
+	MVP
+	6+ WAR
+	
+
+What is WAR? | Sabermetrics Library
+● Because there is no UZR data for catchers, the fielding component for catcher fWAR is calculated using two parts: the Stolen Base Runs Saved (rSB) metric from the Fielding Bible, and Runs saved from Passed Pitches (RPP). This accounts for a large portion of a catcher’s value, although pitch framing is not yet included in WAR. For this reason, catcher WAR is probably the least precise of all of the positions.
+● WAR is context, league, and park neutral. This means you can use WAR to compare players between years, leagues, and teams.
+● It is possible to have a negative WAR. In fact, the worst fWAR any player has had since 2002 is Neifi Perez from the Royals, who posted an incredible -3.1 wins in 2002.
+● WAR is an estimate. You should not use WAR with the expectation that it is precise to the decimal point.
+● FanGraphs’ WAR for pitchers is based on FIP (plus infield fly balls). We also have a version called RA9-WAR which is based on runs allowed. Baseball-Reference uses runs allowed and attempts to correct for the team defense.
+● WAR for relievers includes a leverage component.
+● There are currently 1,000 WAR per season based on a replacement level of a .294 winning percentage. Of those 1,000, 570 WAR are allocated to position players and 430 WAR are allocated to pitchers. You can learn more about the split here.
